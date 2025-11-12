@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+  font-family: "Treasure Map Deadhand", "Pirata One", serif;
+  background: linear-gradient(#87ceeb, #0f5e9c);
+  background-attachment: fixed;
+  color: #2d1e11;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: "Pirata One", serif;
+  text-shadow: 2px 2px #fddc6c;
+  letter-spacing: 2px;
+  color: #49290d;
+  margin-bottom: 15px;
+}
+
+button, a {
+  background: #e63946;
+  color: white;
+  border: 2px solid #b22222;
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover, a:hover {
+  background: #f1c40f;
+  color: #49290d;
+  border-color: #e67e22;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid #b38b4c;
+  border-radius: 8px;
+  background: #fff9e6;
+  font-family: inherit;
+}
+
+.crew-list {
+  margin-top: 15px;
+}
+
+.crew-card {
+  background: #fdf2d6;
+  border: 2px solid #b38b4c;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.crew-card::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px dashed #8e5b2d;
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+form {
+  background: #ffebbb;
+  padding: 15px;
+  border-radius: 12px;
+  border: 3px solid #b38b4c;
+  box-shadow: 0px 3px 6px rgba(80, 46, 12, 0.4);
+}
+
+textarea {
+  height: 80px;
+}
+
+.top-nav {
+  margin-bottom: 20px;
+}
+
+.attribute-buttons {
+  margin-bottom: 12px;
+}
+
+.attribute-buttons h3 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #8e5b2d;
+}
+
+.attribute-buttons button {
+  margin: 2px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e63946;
+  color: white;
+  border: 2px solid #b22222;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.attribute-buttons button:hover {
+  background-color: #f1c40f;
+  color: #49290d;
+  border-color: #e67e22;
+}
+
+.attribute-buttons button.selected {
+  background-color: #f1c40f;
+  color: #49290d;
+  font-weight: bold;
+  border-color: #b38b4c;
+}
+
+.crew-detail {
+  background: #ffebbb;
+  padding: 20px;
+  border-radius: 12px;
+  border: 3px solid #b38b4c;
+  box-shadow: 0px 3px 6px rgba(80, 46, 12, 0.4);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.crew-detail p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.crew-detail .backstory {
+  white-space: pre-wrap;
+  background: #fff9e6;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #b38b4c;
+}
+
+.crew-detail-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+@font-face {
+  font-family: "Treasure Map Deadhand";
+  src: url("https://fonts.cdnfonts.com/s/20312/TreasureMapDeadhand.woff") format("woff");
+}
